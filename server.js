@@ -1,6 +1,7 @@
 const express = require('express');
 const hbs = require('hbs');
 const fs = require('fs');
+const port = process.env.PORT || 3000
 
 let app = express();
 let currentYear = new Date().getFullYear();
@@ -36,6 +37,6 @@ app.get('/about', (req, res) => {
         pageTitle: 'About page'
     });
 })
-app.listen(3000, () => {
+app.listen(port, () => {
     console.log('Server up on port 3000');
 });
