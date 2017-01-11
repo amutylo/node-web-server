@@ -28,7 +28,7 @@ app.use(express.static(__dirname + '/public'));
 app.get('/', (req, res) => {
        res.render('home.hbs', {
         pageTitle: 'Home page',
-        welcomeMessage: "Welcome to the home page"
+        welcomeMessage: "Welcome to the home page",
     });
 });
 
